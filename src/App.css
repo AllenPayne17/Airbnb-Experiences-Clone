@@ -1,0 +1,20 @@
+.nav {
+    padding: 25px 25px;
+    display: flex;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    padding-left: 25px;
+}
+section {
+    padding: 25px;
+}
+.hero-wrapper {
+    padding-top: 30px;
+}
+.hero-title {
+    font-weight: bold;
+}
+.hero-text {
+    max-width: 500px;
+}
