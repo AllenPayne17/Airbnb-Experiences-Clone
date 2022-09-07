@@ -18,3 +18,17 @@ section {
 .hero-text {
     max-width: 500px;
 }
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 25px;
+}
+.gray{
+    color: #918E9B;
+}
+.bold{
+    font-weight: bold;
+}

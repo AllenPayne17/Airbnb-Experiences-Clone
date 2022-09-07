@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Navbar from './component/Navbar';
 import Hero from './component/Hero';
+import Experience from './component/Experience';
 
 
 
@@ -9,85 +10,95 @@ class App extends Component {
 
   state = {
 
-    experience: [
+    reviews: [
       {
         id: 1,
-        img: './images/img-experience1.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience1.jpg'),
+        rate: '5.0',
+        countRate: '(71)',
         country: 'USA',
         title: 'life lessons with katie Zaferes',
         price: '$136'
       },
       {
         id: 2,
-        img: './images/img-experience2.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience2.jpg'),
+        rate: '4.5',
+        countRate: '(55)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'Marriage And Wedding Have More In Common Than You Think',
         price: '$136'
       },
       {
         id: 3,
-        img: './images/img-experience3.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience3.jpg'),
+        rate: '4.4',
+        countRate: '(30)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'Everything I Learned About Bike I Learned From Potus',
         price: '$136'
       },
       {
         id: 4,
-        img: './images/img-experience4.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience4.jpg'),
+        rate: '3.1',
+        countRate: '(13)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'Apply These 6 Secret Techniques To Improve Swimming',
         price: '$136'
       },
       {
         id: 5,
-        img: './images/img-experience5.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience5.png'),
+        rate: '1.5',
+        countRate: '(5)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'Why Relaxes are Harder than Acing the SATs',
         price: '$136'
       },
       {
         id: 6,
-        img: './images/img-experience6.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience6.jpg'),
+        rate: '4.0',
+        countRate: '(20)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'Why Bakes are Cuter Than a Kitten',
         price: '$136'
       },
       {
         id: 7,
-        img: './images/img-experience7.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience7.jpg'),
+        rate: '4.2',
+        countRate: '(43)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'An Expert Interview About Sing',
         price: '$136'
       },
       {
         id: 8,
-        img: './images/img-experience8.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience8.jpg'),
+        rate: '3.5',
+        countRate: '(18)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'Unbelievable Piano Success Stories',
         price: '$136'
       },
       {
         id: 9,
-        img: './images/img-experience9.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience9.png'),
+        rate: '1.0',
+        countRate: '(3)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'Why Mom Was Right About Guitars',
         price: '$136'
       },
       {
         id: 10,
-        img: './images/img-experience10.jpg',
-        rate: '5.0 (30)',
+        img: require('./images/img-experience10.jpg'),
+        rate: '3.0',
+        countRate: '(10)',
         country: 'USA',
-        title: 'life lessons with katie Zaferes',
+        title: 'Why Cooking is the new hotness',
         price: '$136'
       }
     ]
@@ -97,6 +108,7 @@ class App extends Component {
         <div>
           <Navbar />
           <Hero />
+          <Experience reviews={this.state.reviews} />
         </div>
       );
   }
